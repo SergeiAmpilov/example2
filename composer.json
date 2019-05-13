@@ -1,0 +1,28 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SiteApiModule\\": "src/site_api_module",
+      "ProcessingModule\\": "src/processing_module",
+      "LoadingModule\\": "src/loading_module",
+      "MsApiModule\\": "src/ms_api_module",
+      "MsApiWrapperModule\\": "src/ms_api_wrapper_module",
+      "RcrmWrapperModule\\": "src/rcrm_wrapper_module"
+    }
+  },
+  "require": {
+    "tooyz/moysklad": "0.4.7",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "retailcrm/api-client-php": "v5.1.4"
+  }
+}
